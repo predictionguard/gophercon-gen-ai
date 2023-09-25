@@ -29,7 +29,7 @@ type CompletionResults struct {
 func main() {
 
 	// Define the API details to access the LLM.
-	url := "https://intel.predictionguard.com/completions"
+	url := "https://api.predictionguard.com/completions"
 	method := "POST"
 
 	// Define a "prompt" for the LLM completion.
@@ -44,7 +44,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	req.Header.Add("x-api-key", os.Getenv("PREDICTIONGUARD_TOKEN"))
+	req.Header.Add("Authorization", "Bearer "+os.Getenv("PREDICTIONGUARD_TOKEN"))
 	req.Header.Add("Content-Type", "application/json")
 	res, err := client.Do(req)
 	if err != nil {

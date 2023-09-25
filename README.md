@@ -31,5 +31,8 @@ Recommended Preparation:
     1. [Example 1](accessing-llms/example1/) - Prompting a text completion model
     2. [Example 2](accessing-llms/example2/) - Generating Go code with WizardCoder
 2. Basic Prompting
+    1. [Example 1](basic-prompting/example1/) - Autocomplete
+    2. [Example 2](basic-prmopting/example2/) - Zero shot, prompt structure
+    3. [Example 2](basic-prmopting/example3/) - Few shot
 3. Prompt Engineering
 4. Retrieval Augmented Generation

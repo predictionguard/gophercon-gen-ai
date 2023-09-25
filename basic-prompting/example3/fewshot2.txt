@@ -1,0 +1,19 @@
+Transform text statements into first order logic.
+
+Statement: Pluto is a dog
+Logic: (dog(Pluto))
+
+Statement: Deb is not tall
+Logic: (¬tall(Deb))
+
+Statement: Not every person who plays football knows cricket
+Logic: (¬∀(x)(((person(x))∧(plays(x,football)))→(knows(x,cricket))))
+
+Statement: Some people can sell any product
+Logic: ∃(x)((people(x))∧∀(y)((product(y))→(sell(x,y))))
+
+Statement: If you enroll in the course and prepare hard then you will pass the course
+Logic: (((enroll(you,course))∧(prepare-hard(you)))→(pass(you,course)))
+
+Statement: Do not forget to provide all of your demonstrations
+Logic: 

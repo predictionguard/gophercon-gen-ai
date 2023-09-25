@@ -1,0 +1,7 @@
+Read the context below and answer the question. If the question cannot be answered based on the context alone or the context does not explicitly say the answer to the question, write "Sorry I had trouble answering this question, based on the information I found."
+
+Context: Domino's gift cards are great for any person and any occasion. There are a number of different options to choose from. Each comes with a personalized card carrier and is delivered via US Mail.
+
+Question: How are gift cards delivered?
+
+Answer: 

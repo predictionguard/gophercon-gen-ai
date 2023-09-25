@@ -1,0 +1,3 @@
+CREATE TABLE llm_queries(id SERIAL PRIMARY KEY, name TEXT NOT NULL, value REAL);
+INSERT INTO llm_queries('Daniel Whitenack', 'autocomplete')
+SELECT

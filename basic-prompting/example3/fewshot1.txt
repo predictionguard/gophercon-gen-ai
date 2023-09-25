@@ -1,0 +1,31 @@
+Classify the sentiment of the text. Use the label NEU for neutral sentiment, NEG for negative sentiment, and POS for positive sentiment.
+
+Text: That pilot is adorable.
+Sentiment: POS
+
+Text: This was an awful seat.
+Sentiment: NEG
+
+Text: This pilot was brilliant.
+Sentiment: POS
+
+Text: I saw the aircraft.
+Sentiment: NEU
+
+Text: That food was exceptional.
+Sentiment: POS
+
+Text: That was a private aircraft.
+Sentiment: NEU
+
+Text: This is an unhappy pilot.
+Sentiment: NEG
+
+Text: The staff is rough.
+Sentiment: NEG
+
+Text: This staff is Australian.
+Sentiment: NEU
+
+Text: The flight is boring.
+Sentiment: 

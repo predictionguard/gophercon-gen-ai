@@ -12,6 +12,12 @@ import (
 // Define the API details to access the LLM.
 var url = "https://api.predictionguard.com/completions"
 
+// Stop tokens.
+var stop []string = []string{
+	"#",
+	"import",
+}
+
 // CompletionResult is a single completion result.
 type CompletionResult struct {
 	Text   string      `json:"text"`
@@ -82,23 +88,39 @@ func getCompletions(request CompletionRequest) (*CompletionResults, error) {
 
 func main() {
 
-	// Define a "prompt" for the LLM completion.
-	prompt := `### Instruction:
-Write a Go program that prints out random numbers.
+	// Get the prompt file from a command line argument.
+	if len(os.Args) < 2 {
+		log.Fatal("Please provide a prompt file as an argument.")
+	}
+	promptFile := os.Args[1]
 
-### Response:
-`
+	// Read in the prompt from a file.
+	prompt, err := os.ReadFile(promptFile)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	// Prompt a Code Generation LLM.
 	request := CompletionRequest{
-		Prompt: prompt,
-		Model:  "WizardCoder",
+		Prompt: string(prompt),
+		Model:  "Nous-Hermes-Llama2-13B",
 	}
 	response, err := getCompletions(request)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	// Pretty print the results with indentation.
-	fmt.Printf(string(response.Choices[0].Text))
+	// Post process the completion. Given that we are using a system prompt,
+	// Llama 2 models might return some "extra" stuff after the input/output indicators
+	// so we will truncate the completion string on the first # encountered.
+	completion := string(response.Choices[0].Text)
+	for _, s := range stop {
+		if strings.Contains(completion, s) {
+			completion = completion[:strings.Index(completion, s)]
+		}
+	}
+	completion = strings.TrimSpace(completion)
+
+	// Print the autocompletion.
+	fmt.Println("\n" + string(prompt) + completion)
 }
