@@ -35,4 +35,8 @@ Recommended Preparation:
     2. [Example 2](basic-prmopting/example2/) - Zero shot, prompt structure
     3. [Example 2](basic-prmopting/example3/) - Few shot
 3. Prompt Engineering
+    1. [Example 1](prompt-engineering/example1/) - Prompt templates
+    2. [Example 2](prompt-engineering/example2/) - Prompt templates continued
+    3. [Example 3](prompt-engineering/example3/) - Parameters, temperature
+    4. [Example 4](prompt-engineering/example4/) - Parameters, max tokens
 4. Retrieval Augmented Generation
