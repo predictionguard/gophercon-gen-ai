@@ -27,6 +27,7 @@ Recommended Preparation:
 
 ## Agenda
 
+0. Introductions, logistics
 1. Accessing LLMS
     1. [Example 1](accessing-llms/example1/) - Prompting a text completion model
     2. [Example 2](accessing-llms/example2/) - Generating Go code with WizardCoder
@@ -39,4 +40,13 @@ Recommended Preparation:
     2. [Example 2](prompt-engineering/example2/) - Prompt templates continued
     3. [Example 3](prompt-engineering/example3/) - Parameters, temperature
     4. [Example 4](prompt-engineering/example4/) - Parameters, max tokens
+    5. [Example 5](prompt-engineering/example5/) - Contraints, types
+    6. [Example 6](prompt-engineering/example6/) - Guards on factuality, toxicity
 4. Retrieval Augmented Generation
+    1. [Example 1](retrieval-augmentation/example1/) - Preparing data for injection into prompts
+    2. [Example 2](retrieval-augmentation/example2/) - Embedding chunks
+    3. [Example 3](retrieval-augmentation/example3/) - Similarity search
+    4. [Example 4](retrieval-augmentation/example4/) - Similarity search, RAG, continued
+    5. [Example 5](retrieval-augmentation/example5/) - Chaining
+    6. [Example 6](retrieval-augmentation/example6/) - Generalizing retrieval
+5. Conclusions

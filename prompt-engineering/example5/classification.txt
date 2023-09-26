@@ -1,0 +1,7 @@
+### Instruction:
+Respond with a class label for the text in the below user message.
+
+### Input:
+"I would like to talk with a customer service agent"
+
+### Response:

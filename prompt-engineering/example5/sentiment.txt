@@ -1,0 +1,7 @@
+### Instruction:
+Respond with a sentiment label for the text in the below input. Use the label NEU for neutral sentiment, NEG for negative sentiment, and POS for positive sentiment.
+
+### Input:
+This workshop is spectacular. I love it! So wonderful.
+
+### Response:

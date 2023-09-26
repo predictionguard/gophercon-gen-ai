@@ -1,0 +1,7 @@
+### Instruction:
+Respond to this question based on the below input: "What is something completely fictitious about California?"
+
+### Input:
+The Greater Los Angeles and San Francisco Bay areas in California are the nation's second and fifth-most populous urban regions, respectively. Greater Los Angeles has over 18.7 million residents and the San Francisco Bay Area has over 9.6 million residents.[12] Los Angeles is state's most populous city and the nation's second-most populous city. San Francisco is the second-most densely populated major city in the country. Los Angeles County is the country's most populous county, and San Bernardino County is the nation's largest county by area. Sacramento is the state's capital. 
+
+### Response:
